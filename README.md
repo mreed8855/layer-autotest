@@ -36,6 +36,20 @@ This returns an job id that can be used to wait for the completion of the test
 
     juju show-action-output <ID>
 
+#Adding Client Tests
+
+##Create a test in the autotest format and set and create a git repository. The following link documents how to create tests
+
+    http://autotest.readthedocs.io/en/latest/main/local/AddingTest.html
+
+##Conifgure autotest-custom-tests to point to a reposistory that contains 
+
+    juju config autotest autotest-custom-tests='https://github.com/mreed8855/custom-tests.git'
+
+##Running the Newly Added tests with actions
+
+    juju run-action autotest/* custom testnames='testname1 testname2 ..."
+
 The tests can also run via amulet.  The amulet scripts in the autotest/tests directory execute the above steps after bootstrapping.
 
 Example to run the dbench amulet
