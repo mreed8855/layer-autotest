@@ -1,0 +1,2 @@
+repo: https://github.com/mreed8855/layer-autotest.git 
+includes: ['layer:basic', 'layer:apt']

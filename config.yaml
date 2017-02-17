@@ -1,0 +1,13 @@
+options:
+  autotest-server:
+    type: string
+    default: "git://kernel.ubuntu.com/ubuntu/autotest"
+    description: "Location of the autotest server"
+  autotest-client:
+    type: string
+    default: "git://kernel.ubuntu.com/ubuntu/autotest-client-tests"
+    description: "Location of the autotest client testcases"
+  autotest-custom-tests:
+    type: string
+    default: ""
+    description: "Location of the custom autotest client testcases"
