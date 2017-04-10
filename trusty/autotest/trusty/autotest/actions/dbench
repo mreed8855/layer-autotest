@@ -1,0 +1,16 @@
+#!/bin/bash
+
+set -e
+
+# We're just sourcing the central benchmark, typically people will just put
+# their benchmarks in one file.
+. actions/benchmark
+
+run_benchmark dbench
+
+# Parse the results
+LOG_RESULTS_DIR=`cat $CHARM_DIR/.tmp/current_test_path.txt`
+LOG_RESULTS=$LOG_RESULTS_DIR"/default/dbench/results/keyval"
+cat $LOG_RESULTS | python $CHARM_DIR/actions/dbench2json.py
+
+# /tmp/current_test_path.txt

@@ -7,15 +7,8 @@ from charmhelpers.fetch import install_remote
 from charms import apt
 from charms import reactive
 
-from charms.reactive import (
-    hook,
-    set_state,
-    is_state,
-    when_not,
-    when,
-    when_any,
-)
-
+from charms.reactive import hook
+ 
 config = hookenv.config()
 charm_dir = hookenv.charm_dir()
 
@@ -48,15 +41,9 @@ def install_autotest():
     apt.queue_install(packages)
     apt.install_queued()
 
+    setup_autotest()
+    setup_custom_client_tests()
 
-    autotest_server_dir = git_clone(autotest_server, hookenv.charm_dir())
-    autotest_client_dir = git_clone(autotest_client, hookenv.charm_dir())    
-    
-    distutils.dir_util.copy_tree(autotest_server_dir, autotest_dir)
-    distutils.dir_util.copy_tree(autotest_client_dir, autotest_client_test_dir)
-    
-    shutil.rmtree(autotest_server_dir)  
-    shutil.rmtree(autotest_client_dir)  
 
 @hook('config-changed')
 def config_changed():
@@ -64,17 +51,8 @@ def config_changed():
     Add custom tests to the client test directory
     '''
     if config.changed('autotest-custom-tests'):
-       autotest_custom_tests =  config.get('autotest-custom-tests')
-       autotest_custom_dir = git_clone(autotest_custom_tests, hookenv.charm_dir())
-       distutils.dir_util.copy_tree(autotest_custom_dir, autotest_client_test_dir)
-       shutil.rmtree(autotest_custom_dir)
-       hookenv.log('config-changed updated')     
-
-# Used for debug
-#    hookenv.log('************************')
-#    hookenv.log('config-changed called')     
-#    hookenv.log('************************')
-    
+         setup_custom_client_tests()
+         hookenv.log('config-changed custom tests updated')
 
 def git_clone(src, destination):
     '''
@@ -86,3 +64,25 @@ def git_clone(src, destination):
                                   branch='master', depth=None)
 
     return cloned_dir
+
+def setup_autotest():
+    '''
+    Install the server and client tests from git repos
+    '''
+
+    autotest_server_dir = git_clone(autotest_server, hookenv.charm_dir())
+    autotest_client_dir = git_clone(autotest_client, hookenv.charm_dir())    
+    
+    distutils.dir_util.copy_tree(autotest_server_dir, autotest_dir)
+    distutils.dir_util.copy_tree(autotest_client_dir, autotest_client_test_dir)
+    
+    shutil.rmtree(autotest_server_dir)  
+    shutil.rmtree(autotest_client_dir)  
+
+def setup_custom_client_tests():
+    if config.get('autotest-custom-tests'):
+         autotest_custom_tests =  config.get('autotest-custom-tests')
+         autotest_custom_dir = git_clone(autotest_custom_tests, hookenv.charm_dir())
+         distutils.dir_util.copy_tree(autotest_custom_dir, autotest_client_test_dir)
+         shutil.rmtree(autotest_custom_dir)    
+

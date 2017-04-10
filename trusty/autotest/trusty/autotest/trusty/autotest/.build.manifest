@@ -1,0 +1,400 @@
+{
+  "layers": [
+    "layer:basic", 
+    "layer:apt", 
+    "autotest", 
+    "build"
+  ], 
+  "signatures": {
+    ".build.manifest": [
+      "build", 
+      "dynamic", 
+      "unchecked"
+    ], 
+    ".gitignore": [
+      "layer:apt", 
+      "static", 
+      "54c2eac10d7d0187b02c271ac7a3767bb3d365d562cfb8c1548efb4e84f7b2d5"
+    ], 
+    "Makefile": [
+      "layer:basic", 
+      "static", 
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ], 
+    "README.md": [
+      "autotest", 
+      "static", 
+      "78d27b0f456ab531414c16b93a10d9635deabc9966ed0d419c9858a0ded7c565"
+    ], 
+    "actions.yaml": [
+      "autotest", 
+      "dynamic", 
+      "257e08745490e5911a6bcad421c8338e090de20714cf73f2c65bca0488e790c0"
+    ], 
+    "actions/benchmark": [
+      "autotest", 
+      "static", 
+      "51918141fa1feab7da1656997f1be8fefa98ba17a29e7027ecbae25acbbfc4d1"
+    ], 
+    "actions/custom": [
+      "autotest", 
+      "static", 
+      "f91ff1ccb04c013f7f9d293120beaa0d95824029a8001e2477e121f0c262f711"
+    ], 
+    "actions/dbench": [
+      "autotest", 
+      "static", 
+      "d1add22a85203412914a37761327ff036320b45efa8fecf4bda0592ba122d3c2"
+    ], 
+    "actions/dbench2json.py": [
+      "autotest", 
+      "static", 
+      "30e2e1f4d1689e3a0844f0b72db2c48819a40969b45cafe9dd9880c704111b1e"
+    ], 
+    "actions/stress": [
+      "autotest", 
+      "static", 
+      "c83e6684c4f1232edf576cafd5edc47b060e2c0e1267bae46e9956f830c97924"
+    ], 
+    "actions/stressng": [
+      "autotest", 
+      "static", 
+      "c2fe29ab73803eea9a13f72bd62bc1f80d7ea42413978cc5f3fded65a9f7d27c"
+    ], 
+    "actions/ubuntuqrt": [
+      "autotest", 
+      "static", 
+      "53ef5f50d7bb2700d8186a9daf72fe7db953996219b8329408f137c5940458be"
+    ], 
+    "bin/layer_option": [
+      "layer:basic", 
+      "static", 
+      "621b556cd208005e131e9f648859294347da9376609745a73ca2e808dd2032f9"
+    ], 
+    "config.yaml": [
+      "autotest", 
+      "dynamic", 
+      "805c606953174159ca046536a8e4d6af7f1e33ef146dc2d6c4fbf1b60c3e8261"
+    ], 
+    "copyright": [
+      "autotest", 
+      "static", 
+      "3f6d14785773336ab1f88b2bd9e18a5650566db9ced515efaa8e2f6e5ac751bd"
+    ], 
+    "deps/layer/apt/.gitignore": [
+      "autotest", 
+      "static", 
+      "54c2eac10d7d0187b02c271ac7a3767bb3d365d562cfb8c1548efb4e84f7b2d5"
+    ], 
+    "deps/layer/apt/README.md": [
+      "autotest", 
+      "static", 
+      "f15fa692e2631d913c49fdb90f873da33efa1bcc167fbcea22fb3b48ff7ff627"
+    ], 
+    "deps/layer/apt/config.yaml": [
+      "autotest", 
+      "static", 
+      "6f53871229977160b32c1451af3d98bb75d24e7c225afb1a0e9fa422ef7b0977"
+    ], 
+    "deps/layer/apt/copyright": [
+      "autotest", 
+      "static", 
+      "5123b2d0220fefb4424a463216fb41a6dd7cfad49c9799ba7037f1e74a2fd6bc"
+    ], 
+    "deps/layer/apt/layer.yaml": [
+      "autotest", 
+      "static", 
+      "ed1463b2dbf0d16f8a87ab79ac22ca83f8c832938c344985fe647142352df7fb"
+    ], 
+    "deps/layer/apt/lib/charms/__init__.py": [
+      "autotest", 
+      "static", 
+      "4032724b98ed267185b12b8ec78dd9bcb0423ab1c89a6f0dad99397fd51159d9"
+    ], 
+    "deps/layer/apt/lib/charms/apt.py": [
+      "autotest", 
+      "static", 
+      "f074d981409c3860547f8c45cde9c3ce4a80985a5ee94755981cd10117dc76e4"
+    ], 
+    "deps/layer/apt/reactive/apt.py": [
+      "autotest", 
+      "static", 
+      "6dad3fc2032bc4367b3669def96a45609222a745fd28763992725e377d7c974c"
+    ], 
+    "deps/layer/basic/.gitignore": [
+      "autotest", 
+      "static", 
+      "0da5c4dcda27cd6406e5bb81cbf68ddccaf728ac764ec15053a165c1449d87d9"
+    ], 
+    "deps/layer/basic/Makefile": [
+      "autotest", 
+      "static", 
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ], 
+    "deps/layer/basic/README.md": [
+      "autotest", 
+      "static", 
+      "5191464bb080f2f2939a6266a6ed2a10b3df64780d3d84fde673666bce29d5c7"
+    ], 
+    "deps/layer/basic/bin/layer_option": [
+      "autotest", 
+      "static", 
+      "621b556cd208005e131e9f648859294347da9376609745a73ca2e808dd2032f9"
+    ], 
+    "deps/layer/basic/copyright": [
+      "autotest", 
+      "static", 
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ], 
+    "deps/layer/basic/hooks/config-changed": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/hook.template": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/install": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/leader-elected": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/leader-settings-changed": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/start": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/stop": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/update-status": [
+      "autotest", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "deps/layer/basic/hooks/upgrade-charm": [
+      "autotest", 
+      "static", 
+      "8b9c153a61cc78067af8d016a8fa1c764caad3a40c82bb0b5121fc4c4c6a04f1"
+    ], 
+    "deps/layer/basic/layer.yaml": [
+      "autotest", 
+      "static", 
+      "fbd3e3a22f3b8b1e7656e12f5db0ebf69c145b8e8b59c125e6faf043cba50b9b"
+    ], 
+    "deps/layer/basic/lib/charms/layer/__init__.py": [
+      "autotest", 
+      "static", 
+      "4ffd74384bd81d737572acf2d14fe55431eab8f49d6212d9aabedf24e1d992b2"
+    ], 
+    "deps/layer/basic/lib/charms/layer/basic.py": [
+      "autotest", 
+      "static", 
+      "14905051850da09eb6b2b2a0032175b1c2efeb11109cbd01790d4e4c3b8a41ea"
+    ], 
+    "deps/layer/basic/lib/charms/layer/execd.py": [
+      "autotest", 
+      "static", 
+      "c0eb4c90e93a14f04d851f78bc6592e093226321fbe328125958633397aed014"
+    ], 
+    "deps/layer/basic/metadata.yaml": [
+      "autotest", 
+      "static", 
+      "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    ], 
+    "deps/layer/basic/reactive/__init__.py": [
+      "autotest", 
+      "static", 
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ], 
+    "deps/layer/basic/requirements.txt": [
+      "autotest", 
+      "static", 
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ], 
+    "deps/layer/basic/tox.ini": [
+      "autotest", 
+      "static", 
+      "00b57a776ac313e92a52daa05d1fdb6056c21b3105b643d32610fd937664321b"
+    ], 
+    "deps/layer/basic/wheelhouse.txt": [
+      "autotest", 
+      "static", 
+      "2f19b10e72d7299f4fc53c33caa0ad425ebcef59231238b49bc45b10ab49ae16"
+    ], 
+    "hooks/config-changed": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/hook.template": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/install": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/leader-elected": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/leader-settings-changed": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/start": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/stop": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/update-status": [
+      "layer:basic", 
+      "static", 
+      "3a854a5fd180c5bacbb80b501d968a8d8bdc1468361e7123ea4022a1e0363c9a"
+    ], 
+    "hooks/upgrade-charm": [
+      "layer:basic", 
+      "static", 
+      "8b9c153a61cc78067af8d016a8fa1c764caad3a40c82bb0b5121fc4c4c6a04f1"
+    ], 
+    "icon.svg": [
+      "autotest", 
+      "static", 
+      "af569c94cee46a41836ba44803016f4824c089aeee48e03008da14940fbfd82e"
+    ], 
+    "layer.yaml": [
+      "autotest", 
+      "dynamic", 
+      "9bb7e90c309ee7ce2b349bcd573a81ddc04163396ff5bf3b7ed701c129be79d2"
+    ], 
+    "lib/charms/__init__.py": [
+      "layer:apt", 
+      "static", 
+      "4032724b98ed267185b12b8ec78dd9bcb0423ab1c89a6f0dad99397fd51159d9"
+    ], 
+    "lib/charms/apt.py": [
+      "layer:apt", 
+      "static", 
+      "f074d981409c3860547f8c45cde9c3ce4a80985a5ee94755981cd10117dc76e4"
+    ], 
+    "lib/charms/layer/__init__.py": [
+      "layer:basic", 
+      "static", 
+      "4ffd74384bd81d737572acf2d14fe55431eab8f49d6212d9aabedf24e1d992b2"
+    ], 
+    "lib/charms/layer/basic.py": [
+      "layer:basic", 
+      "static", 
+      "14905051850da09eb6b2b2a0032175b1c2efeb11109cbd01790d4e4c3b8a41ea"
+    ], 
+    "lib/charms/layer/execd.py": [
+      "layer:basic", 
+      "static", 
+      "c0eb4c90e93a14f04d851f78bc6592e093226321fbe328125958633397aed014"
+    ], 
+    "metadata.yaml": [
+      "autotest", 
+      "dynamic", 
+      "9105509c4e536dda84de245f505c57f0b5df1e07f1b17e5136817fd65e69f224"
+    ], 
+    "reactive/__init__.py": [
+      "layer:basic", 
+      "static", 
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ], 
+    "reactive/apt.py": [
+      "layer:apt", 
+      "static", 
+      "6dad3fc2032bc4367b3669def96a45609222a745fd28763992725e377d7c974c"
+    ], 
+    "reactive/autotest.py": [
+      "autotest", 
+      "static", 
+      "ec18e7a95fd7299220a2f61ff6dcdcee80bfb159ee71d2c4267c2c8337d38588"
+    ], 
+    "requirements.txt": [
+      "layer:basic", 
+      "static", 
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ], 
+    "tox.ini": [
+      "layer:basic", 
+      "static", 
+      "00b57a776ac313e92a52daa05d1fdb6056c21b3105b643d32610fd937664321b"
+    ], 
+    "wheelhouse/Jinja2-2.9.6.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "ddaa01a212cd6d641401cb01b605f4a4d9f37bfc93043d7f760ec70fb99ff9ff"
+    ], 
+    "wheelhouse/MarkupSafe-1.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "a6be69091dac236ea9c6bc7d012beab42010fa914c459791d627dad4910eb665"
+    ], 
+    "wheelhouse/PyYAML-3.12.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+    ], 
+    "wheelhouse/Tempita-0.5.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "cacecf0baa674d356641f1d406b8bff1d756d739c46b869a54de515d08e6fc9c"
+    ], 
+    "wheelhouse/charmhelpers-0.14.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "d2525bd5b1372ff098678f8ca7aa56f4bcdd62effabc92d48b6650f3c4b9251b"
+    ], 
+    "wheelhouse/charms.reactive-0.4.5.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "b2a475aff349a1c6532de0f9b4df5ee456b97a1e1755695afd8747dbc51bb710"
+    ], 
+    "wheelhouse/netaddr-0.7.19.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "38aeec7cdd035081d3a4c306394b19d677623bf76fa0913f6695127c7753aefd"
+    ], 
+    "wheelhouse/pip-8.1.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "4d24b03ffa67638a3fa931c09fd9e0273ffa904e95ebebe7d4b1a54c93d7b732"
+    ], 
+    "wheelhouse/pyaml-16.12.2.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "b865e4f53a85f4d8a092e7701f759a3237fb3ee8a928627401914aafadc00907"
+    ], 
+    "wheelhouse/six-1.10.0.tar.gz": [
+      "layer:basic", 
+      "dynamic", 
+      "105f8d68616f8248e24bf0e9372ef04d3cc10104f1980f54d57b2ce73a5ad56a"
+    ]
+  }
+}
