@@ -2,6 +2,16 @@
   "apt":
     "packages":
     - "git"
+    - "gcc"
+    - "dh-autoreconf"
+    - "autoconf"
+    - "python-pexpect"
+    - "libkeyutils-dev"
+    - "libattr1-dev"
+    - "automake"
+    - "build-essential"
+    - "gdb"
+
     "version_package": ""
     "full_version": !!bool "false"
   "autotest": {}

@@ -1,16 +1,16 @@
-"options":
-  "apt":
-    "packages":
-    - "git"
-    "version_package": ""
-    "full_version": !!bool "false"
-  "autotest": {}
-  "basic":
-    "use_venv": !!bool "false"
-    "packages": []
-    "include_system_packages": !!bool "false"
-"repo": "https://github.com/mreed8855/layer-autotest.git"
-"includes":
-- "layer:basic"
-- "layer:apt"
-"is": "autotest"
+repo: https://github.com/mreed8855/layer-autotest.git 
+includes: ['layer:basic', 'layer:apt']
+options:
+  apt:
+    packages:
+      - git
+      - gcc
+      - dh-autoreconf
+      - autoconf
+      - python-pexpect
+      - libkeyutils-dev
+      - libattr1-dev
+      - automake
+      - build-essential
+      - gdb
+

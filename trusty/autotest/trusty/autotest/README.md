@@ -50,13 +50,5 @@ This returns an job id that can be used to wait for the completion of the test
 
     juju run-action autotest/* custom testnames='testname1 testname2 ..."
 
-The tests can also run via amulet.  The amulet scripts in the autotest/tests directory execute the above steps after bootstrapping.
 
-Example to run the dbench amulet
-
-    juju bootstrap
-    cd autotest/tests/ && ./200-dbench
-
-(Execute 00-setup to ensure all packages needed for amulet are installed prior to the first run)
-
-Results are moved to the $CHARM_DIR/tmp/results/$test-name after each run. 
+Results are moved to the $CHARM_DIR/.tmp/results/$test-name after each run. 

@@ -1,14 +1,14 @@
-"custom":
-  "description": "Custom Autobench tests"
-  "params":
-    "testnames":
-      "type": "string"
-      "description": "List specfic tests that do not have actions defined"
-"dbench":
-  "description": "A tool to generate I/O workloads to either a filesystem."
-"stress":
-  "description": "Stress tests that complete quickly."
-"stressng":
-  "description": "Ubuntu stress NG tests"
-"ubuntuqrt":
-  "description": "Ubuntu qa regression tests"
+custom:
+  description: "Custom Autobench tests"
+  params:
+    testnames:
+      type: string
+      description: "List specfic tests that do not have actions defined"
+dbench:
+  description: A tool to generate I/O workloads to either a filesystem.
+stress:
+  description:  Stress tests that complete quickly.
+stressng:
+  description:  Ubuntu stress NG tests
+ubuntuqrt:
+  description:  Ubuntu qa regression tests 

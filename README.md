@@ -50,4 +50,5 @@ This returns an job id that can be used to wait for the completion of the test
 
     juju run-action autotest/* custom testnames='testname1 testname2 ..."
 
-Results are moved to the $CHARM_DIR/tmp/results/$test-name after each run. 
+
+Results are moved to the $CHARM_DIR/.tmp/results/$test-name after each run. 

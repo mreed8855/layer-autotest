@@ -1,8 +1,8 @@
-"name": "autotest"
-"summary": "Create a framework to run tests in the Autotest framework"
-"maintainer": "Michael Reed <michael.reed@canonical.com>"
-"description": |
+name: autotest
+summary: Create a framework to run tests in the Autotest framework
+maintainer: Michael Reed <michael.reed@canonical.com>
+description: |
   Create a framework to run tests in the Autotest framework
-"tags":
-- "misc"
-- "autotest"
+tags:
+  - misc
+  - autotest

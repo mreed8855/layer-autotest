@@ -4,7 +4,7 @@ import shutil
 
 from charmhelpers.core import hookenv
 from charmhelpers.fetch import install_remote
-from charms import apt
+#from charms import apt
 from charms import reactive
 
 from charms.reactive import hook
@@ -24,23 +24,6 @@ def install_autotest():
     Install the needed packages for autotest
     Clone autotest server and client directory
     '''
-    packages = [
-        'gcc', 
-        'dh-autoreconf', 
-        'autoconf', 
-        'python-pexpect', 
-        'libkeyutils-dev', 
-        'libattr1-dev', 
-        'automake',
-        'build-essential',
-        'gdb',
-        'git',
-    ]
-    
-
-    apt.queue_install(packages)
-    apt.install_queued()
-
     setup_autotest()
     setup_custom_client_tests()
 
