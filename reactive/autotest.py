@@ -44,7 +44,7 @@ def git_clone(src, destination):
 
     cloned_dir = None
     cloned_dir = install_remote(src, dest=destination,
-                                ranch='master', depth=None)
+                                branch='master', depth=None)
 
     return cloned_dir
 
