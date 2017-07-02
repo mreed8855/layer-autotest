@@ -37,9 +37,7 @@ def install_autotest():
     set_state("autotest.installed")
 
 
-@when_all('config-changed.autotest-server',
-          'config-changed.autotest-client',
-          'config-changed.autotest-autotest-custom-tests')
+@when('autotest.installed')
 def config_changed():
     '''
     Add custom tests to the client test directory

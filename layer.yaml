@@ -11,5 +11,6 @@ options:
       - libkeyutils-dev
       - libattr1-dev
       - automake
+      - python-apt
       - build-essential
       - gdb
